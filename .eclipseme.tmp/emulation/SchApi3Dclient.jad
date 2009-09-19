@@ -1,0 +1,8 @@
+MIDlet-1: SchApiClient,,SchApiClient
+MIDlet-Jar-Size: 4511
+MIDlet-Jar-URL: SchApi3Dclient.jar
+MIDlet-Name: SchApi3Dclient Midlet Suite
+MIDlet-Vendor: Midlet Suite Vendor
+MIDlet-Version: 1.0.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="res"/>
+	<classpathentry kind="con" path="J2MELIB"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/cldcapi10.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/cldcapi11.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/j2me-ws.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/j2me-xmlrpc.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/jsr75.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/jsr082.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/jsr179.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/jsr180.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/jsr184.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/jsr211.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/jsr226.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/jsr229.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/jsr234.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/jsr238.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/jsr239.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/midpapi10.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/midpapi20.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/midpapi21.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/mmapi.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/satsa-apdu.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/satsa-crypto.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/satsa-jcrmi.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/satsa-pki.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/wma11.jar"/>
+	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/wma20.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

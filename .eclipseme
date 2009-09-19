@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipsemeMetadata jad="SchApi3Dclient.jad" version="1.7.9">
+   <device group="Sun Java(TM) Wireless Toolkit 2.5.2_01 for CLDC" name="MediaControlSkin"/>
+   <signing signProject="true">
+      <keystore>/home/volcan/j2mewtk/2.5.2/appdb/keystore.ks</keystore>
+      <alias>myKey</alias>
+      <provider/>
+      <keystoreType/>
+      <passwords storePasswords="2">
+         <keystore>MmbD2FOe</keystore>
+         <key>MmbD2FOe</key>
+      </passwords>
+   </signing>
+</eclipsemeMetadata>
