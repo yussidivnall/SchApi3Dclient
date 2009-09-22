@@ -28,5 +28,6 @@
 	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/satsa-pki.jar"/>
 	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/wma11.jar"/>
 	<classpathentry kind="lib" path="/opt/WTK2.5.2/lib/wma20.jar"/>
+	<classpathentry kind="lib" path="/home/volcan/workspace/SchApi3Dclient/kxml2-2.3.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -33,6 +33,7 @@ public class ConnectThread extends Thread {
 			is.close();
 			os.close();
 			connection.close();
+			System.out.println("Connection closed!");
 		}catch(IOException ioe){
 			ioe.printStackTrace();
 		}

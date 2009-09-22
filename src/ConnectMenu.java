@@ -16,10 +16,19 @@ public class ConnectMenu extends Form implements CommandListener{
 		this.addCommand(cancel);
 		setCommandListener(this);
 	}
+	public void connectionCompleted(){
+		//Called back from connectionManager upon connection
+		MapCanvas canvas = new MapCanvas();
+		display.setCurrent(canvas);
+	}
+	
 	public void commandAction(Command cmd, Displayable disp) {
 		if(cmd.getLabel()=="OK"){
-			ConnectThread connectThread = new ConnectThread();
-			connectThread.start();
+			//ConnectThread connectThread = new ConnectThread();
+			//connectThread.start();
+			ConnectionManager.setConnectMenu(this);
+			ConnectionManager.connect();
+			
 		}
 		if (cmd.getLabel()=="Cancel"){
 			System.out.println("Canceled connect");
