@@ -26,8 +26,12 @@ public class ConnectMenu extends Form implements CommandListener{
 		if(cmd.getLabel()=="OK"){
 			//ConnectThread connectThread = new ConnectThread();
 			//connectThread.start();
-			ConnectionManager.setConnectMenu(this);
-			ConnectionManager.connect();
+			
+			//ConnectionManager.setConnectMenu(this);
+			//ConnectionManager.connect();
+			
+			
+			ProtocolHandler.connect(this);
 			
 		}
 		if (cmd.getLabel()=="Cancel"){
