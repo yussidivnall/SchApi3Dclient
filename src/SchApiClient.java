@@ -17,7 +17,7 @@ public class SchApiClient extends MIDlet {
 		display.setCurrent(mainMenu);
 	}
 	protected void destroyApp(boolean arg0) throws MIDletStateChangeException {
-		// TODO Auto-generated method stub
+		SchConfig.finish();
 	}
 
 	protected void pauseApp() {
