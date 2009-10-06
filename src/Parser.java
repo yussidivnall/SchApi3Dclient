@@ -1,4 +1,6 @@
 import java.io.*;
+import org.kxml2.*;
+import org.kxml2.io.*;
 import org.xmlpull.v1.*;
 
 
@@ -28,23 +30,50 @@ class Parser{
 
 class listenerThread extends Thread{
 	InputStream input;
-	XmlPullParserFactory factory; 
-	
-	
 	listenerThread(InputStream in){
 		input=in;
 	}
 	public void run(){
 		try{
+			DataInputStream dis = new DataInputStream(input);
 			while (!SchConfig.done){
 				while(input.available()==0){} // hold until input avail;
-				//Parser.Parse_XML(input);
-				//ParseXML(input);
-				//System.out.println("Input:"+input.read());
+				byte b[] = new byte[dis.available()];
+				dis.readFully(b);
+				if(new String(b).startsWith("<?xml"))parseXML_root(dis); 
+						
 			}
 			input.close();
 		}catch(IOException ioe){
 			ioe.printStackTrace();
+		}
+	}
+	
+	
+	public void parseXML_root(DataInputStream dis) throws IOException{
+		while(dis.available()>0){
+			byte b[] = new byte[dis.available()];
+			dis.readFully(b);
+			System.out.println("root: "+new String(b));
+			if(new String(b).trim().startsWith("<map"))parseXML_map(dis);
+		}
+	}
+	public void parseXML_map(DataInputStream dis) throws IOException{
+		while(dis.available()>0){
+			byte b[] = new byte[dis.available()];
+			dis.readFully(b);
+			System.out.println("map: "+new String(b));
+			if(new String(b).trim().startsWith("</map")) break;
+			if(new String(b).trim().startsWith("<job")) parseXML_job(dis,new String(b));
+		}
+	}
+	public void parseXML_job(DataInputStream dis,String header) throws IOException{
+		while(dis.available()>0){
+			System.out.println("Job: "+ header);
+			byte b[] = new byte[dis.available()];
+			dis.readFully(b);
+			if(new String(b).startsWith("</job")) break;
+			System.out.println("Job: "+ new String(b));
 		}
 	}
 
